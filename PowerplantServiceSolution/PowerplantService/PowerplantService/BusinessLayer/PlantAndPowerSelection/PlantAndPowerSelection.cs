@@ -1,0 +1,90 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Resources;
+using PowerplantService.BusinessLayer.BasePowerplant;
+using PowerplantService.BusinessLayer.Intefaces;
+using PowerplantService.DataModel;
+
+namespace PowerplantService.BusinessLayer
+{
+    /// <summary>
+    /// Class to manage gnerated and required power by plants
+    /// </summary>
+	public class PlantAndPowerSelection : IPlantAndPowerSelection
+    {
+        private IMeritOrder _meritOrder;
+        private BaseWindPowerplant _windPowerplant;
+
+        public PlantAndPowerSelection(IMeritOrder meritOrder, BaseWindPowerplant windPowerplant)
+        {
+            this._meritOrder = meritOrder;
+            this._windPowerplant = windPowerplant;
+        }
+
+        /// <summary>
+        /// Determine list of powerplants and their generated power
+        /// </summary>
+        /// <param name="resources">All resources</param>
+        /// <returns>List of powerplnats and power</returns>
+        public List<RequiredPowerplant> SelectPlantAndPower(Resources resources)
+        {
+            List<RequiredPowerplant> reqPowerplants = new List<RequiredPowerplant>();
+            Dictionary<string, double> meritOrder = this._meritOrder.DecideMeritOrder(resources.Fuels, resources.Powerplants);
+            double alreadyGeneratedPower = 0.00;
+            foreach (KeyValuePair<string, double> item in meritOrder)
+            {
+                if (resources.Powerplants.Any(p => p.Name.ToLower() == item.Key.ToLower()))
+                {
+                    Powerplant selectedPlant = resources.Powerplants.Where(p => p.Name.ToLower() == item.Key.ToLower()).First();
+                    RequiredPowerplant reqPlant = new RequiredPowerplant();
+                    if (selectedPlant.Type.ToLower() == PowerplantType.gasfired.ToString().ToLower())
+                    {
+                        reqPlant.P = DeterminePower(alreadyGeneratedPower, selectedPlant.Pmax, resources.Load);
+                    }
+                    else if (selectedPlant.Type.ToLower() == PowerplantType.turbojet.ToString().ToLower())
+                    {
+                        reqPlant.P = DeterminePower(alreadyGeneratedPower, selectedPlant.Pmax, resources.Load);
+                    }
+                    else if (selectedPlant.Type.ToLower() == PowerplantType.windturbine.ToString().ToLower())
+                    {
+                        this._windPowerplant = new WindPowerplant();
+                        double pMaxBasedOnWind = this._windPowerplant.CalculatePMax(resources.Fuels.Wind, selectedPlant.Pmax);
+                        reqPlant.P = DeterminePower(alreadyGeneratedPower, pMaxBasedOnWind, resources.Load);
+                    }
+
+                    reqPlant.Name = selectedPlant.Name;
+                    reqPowerplants.Add(reqPlant);
+                    alreadyGeneratedPower = alreadyGeneratedPower + reqPlant.P;
+                }
+            }
+            return reqPowerplants;
+        }
+
+        /// <summary>
+        /// Determine required power
+        /// </summary>
+        /// <param name="alreadyGeneratedPower">Already generated power</param>
+        /// <param name="pMax">Maximum power of a powerplant</param>
+        /// <param name="totalLoad">Total load required</param>
+        /// <returns>Generated power by plant</returns>
+        private double DeterminePower(double alreadyGeneratedPower, double pMax, double totalLoad)
+        {
+            if (alreadyGeneratedPower < totalLoad)
+            {
+                if (totalLoad - alreadyGeneratedPower > pMax)
+                {
+                    return pMax;
+                }
+                else
+                {
+                    return totalLoad - alreadyGeneratedPower;
+                }
+            }
+            else
+            {
+                return 0.00;
+            }
+        }
+    }
+}
+

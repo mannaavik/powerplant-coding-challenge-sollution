@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{2BBEC9ED-AD96-4929-987B-98639C7C8C52}|https">
+  <MonoDevelop.Ide.ItemProperties.PowerplantService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PowerplantServiceTest/TestControllers/TestPowerolantController.cs">
+    <Files>
+      <File FileName="PowerplantService/DataModel/Resources.cs" Line="25" Column="27" />
+      <File FileName="PowerplantService/Program.cs" Line="26" Column="1" />
+      <File FileName="PowerplantService/BusinessLayer/MeritOrder/MeritOrder.cs" />
+      <File FileName="PowerplantService/Controllers/WeatherForecastController.cs" Line="34" Column="1" />
+      <File FileName="PowerplantService/Controllers/PowerplantController.cs" Line="20" Column="65" />
+      <File FileName="PowerplantService/DataModel/RequiredPowerplant.cs" Line="6" Column="1" />
+      <File FileName="PowerplantService/appsettings.json" Line="11" Column="1" />
+      <File FileName="PowerplantService/WeatherForecast.cs" />
+      <File FileName="PowerplantService/Properties/launchSettings.json" />
+      <File FileName="PowerplantService/BusinessLayer/PlantAndPowerSelection/PlantAndPowerSelection.cs" Line="1" Column="1" />
+      <File FileName="PowerplantService/DataModel/ErrorInfo.cs" Line="11" Column="28" />
+      <File FileName="PowerplantService/Middleware/ExceptionMiddleware.cs" Line="21" Column="12" />
+      <File FileName="PowerplantService/BusinessLayer/Intefaces/ILogger.cs" Line="10" Column="1" />
+      <File FileName="PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" Line="12" Column="1" />
+      <File FileName="PowerplantServiceTest/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="PowerplantServiceTest/TestControllers/TestPowerolantController.cs" Line="25" Column="1" />
+      <File FileName="PowerplantServiceTest/InputOutputData/RequestInput.cs" Line="39" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PowerplantService" expanded="True">
+            <Node name="PowerplantService" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="BusinessLayer" expanded="True">
+                <Node name="LoggerService" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="DataModel" expanded="True" />
+              <Node name="Middleware" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="PowerplantServiceTest">
+              <Node name="TestControllers" expanded="True">
+                <Node name="TestPowerolantController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="25" column="1" />
+      <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="21" column="1" />
+      <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" relfile="PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" line="12" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

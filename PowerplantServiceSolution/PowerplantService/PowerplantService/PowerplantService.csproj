@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="DataModel\" />
+    <None Remove="BusinessLayer\" />
+    <None Remove="BusinessLayer\MeritOrder\" />
+    <None Remove="BusinessLayer\Intefaces\" />
+    <None Remove="BusinessLayer\Powerplants\" />
+    <None Remove="BusinessLayer\PlantAndPowerSelection\" />
+    <None Remove="BusinessLayer\BasePowerplant\" />
+    <None Remove="Middleware\" />
+    <None Remove="BusinessLayer\LoggerService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataModel\" />
+    <Folder Include="BusinessLayer\" />
+    <Folder Include="BusinessLayer\MeritOrder\" />
+    <Folder Include="BusinessLayer\Intefaces\" />
+    <Folder Include="BusinessLayer\Powerplants\" />
+    <Folder Include="BusinessLayer\PlantAndPowerSelection\" />
+    <Folder Include="BusinessLayer\BasePowerplant\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="BusinessLayer\LoggerService\" />
+  </ItemGroup>
+</Project>
