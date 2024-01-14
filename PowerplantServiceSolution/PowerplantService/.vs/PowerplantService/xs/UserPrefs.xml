@@ -1,7 +1,5 @@
-﻿<Properties StartupConfiguration="{2BBEC9ED-AD96-4929-987B-98639C7C8C52}|https">
-  <MonoDevelop.Ide.ItemProperties.PowerplantService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{03737585-5AC1-4E0D-BA7B-E57949322CDC}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PowerplantServiceTest/TestControllers/TestPowerolantController.cs">
     <Files>
       <File FileName="PowerplantService/DataModel/Resources.cs" Line="25" Column="27" />
@@ -48,12 +46,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="25" column="1" />
-      <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="21" column="1" />
-      <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" relfile="PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" line="12" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PowerplantService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="25" column="1" />
+    <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="21" column="1" />
+    <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" relfile="PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" line="12" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
