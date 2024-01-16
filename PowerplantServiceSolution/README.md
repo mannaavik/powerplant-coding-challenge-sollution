@@ -12,3 +12,5 @@
 2.	Run command “Dotnet build”
 3.	Run command “Dotnet run –project powerplantservice/powerplantservice.csproj”
 4.	Open the browser and browse url https://localhost:8888/swagger or http://localhost:8888/swagger 
+
+----The docker file is also available by which anyone can containerize the application in Docker hub.
