@@ -9,7 +9,7 @@ namespace PowerplantService.BusinessLayer
     /// <summary>
     /// Class to manage Wind powerplants
     /// </summary>
-	public class WindPowerplant: BaseWindPowerplant, IPowerplant
+	public class WindPowerPlant: IWindPowerPlant, IPowerplant
     {
         /// <summary>
         /// Calculate cost of powerplant
@@ -28,7 +28,7 @@ namespace PowerplantService.BusinessLayer
         /// <param name="wind">current wind value</param>
         /// <param name="pMax">Maximum power</param>
         /// <returns>Current possible maximum power</returns>
-        public override double CalculatePMax(double wind, double pMax)
+        public double CalculatePMax(double wind, double pMax)
         {
             return Math.Round((wind * pMax) / 100, 2);
         }

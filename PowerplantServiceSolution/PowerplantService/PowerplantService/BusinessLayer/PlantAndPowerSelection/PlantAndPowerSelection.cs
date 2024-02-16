@@ -13,9 +13,9 @@ namespace PowerplantService.BusinessLayer
 	public class PlantAndPowerSelection : IPlantAndPowerSelection
     {
         private IMeritOrder _meritOrder;
-        private BaseWindPowerplant _windPowerplant;
+        private IWindPowerPlant _windPowerplant;
 
-        public PlantAndPowerSelection(IMeritOrder meritOrder, BaseWindPowerplant windPowerplant)
+        public PlantAndPowerSelection(IMeritOrder meritOrder, IWindPowerPlant windPowerplant)
         {
             this._meritOrder = meritOrder;
             this._windPowerplant = windPowerplant;
@@ -26,9 +26,9 @@ namespace PowerplantService.BusinessLayer
         /// </summary>
         /// <param name="resources">All resources</param>
         /// <returns>List of powerplnats and power</returns>
-        public List<RequiredPowerplant> SelectPlantAndPower(Resources resources)
+        public List<RequiredPowerPlant> SelectPlantAndPower(Resources resources)
         {
-            List<RequiredPowerplant> reqPowerplants = new List<RequiredPowerplant>();
+            List<RequiredPowerPlant> reqPowerplants = new List<RequiredPowerPlant>();
             Dictionary<string, double> meritOrder = this._meritOrder.DecideMeritOrder(resources.Fuels, resources.Powerplants);
             double alreadyGeneratedPower = 0.00;
             foreach (KeyValuePair<string, double> item in meritOrder)
@@ -36,7 +36,7 @@ namespace PowerplantService.BusinessLayer
                 if (resources.Powerplants.Any(p => p.Name.ToLower() == item.Key.ToLower()))
                 {
                     Powerplant selectedPlant = resources.Powerplants.Where(p => p.Name.ToLower() == item.Key.ToLower()).First();
-                    RequiredPowerplant reqPlant = new RequiredPowerplant();
+                    RequiredPowerPlant reqPlant = new RequiredPowerPlant();
                     if (selectedPlant.Type.ToLower() == PowerplantType.gasfired.ToString().ToLower())
                     {
                         reqPlant.P = DeterminePower(alreadyGeneratedPower, selectedPlant.Pmax, resources.Load);
@@ -47,7 +47,7 @@ namespace PowerplantService.BusinessLayer
                     }
                     else if (selectedPlant.Type.ToLower() == PowerplantType.windturbine.ToString().ToLower())
                     {
-                        this._windPowerplant = new WindPowerplant();
+                        this._windPowerplant = new WindPowerPlant();
                         double pMaxBasedOnWind = this._windPowerplant.CalculatePMax(resources.Fuels.Wind, selectedPlant.Pmax);
                         reqPlant.P = DeterminePower(alreadyGeneratedPower, pMaxBasedOnWind, resources.Load);
                     }

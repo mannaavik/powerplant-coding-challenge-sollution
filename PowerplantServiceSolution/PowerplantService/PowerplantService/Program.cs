@@ -21,9 +21,9 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 
 //Adding dependencies
-builder.Services.AddScoped<IPowerplant, WindPowerplant>();
+builder.Services.AddScoped<IPowerplant, WindPowerPlant>();
 builder.Services.AddScoped<IMeritOrder, MeritOrder>();
-builder.Services.AddScoped<BaseWindPowerplant, WindPowerplant>();
+builder.Services.AddScoped<IWindPowerPlant, WindPowerPlant>();
 builder.Services.AddScoped<IPlantAndPowerSelection, PlantAndPowerSelection>();
 builder.Services.AddSingleton<ILoggerService, LoggerService>();
 

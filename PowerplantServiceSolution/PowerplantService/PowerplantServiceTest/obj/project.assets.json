@@ -7204,11 +7204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/PowerplantServiceTest.csproj",
+      "projectUniqueName": "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/PowerplantServiceTest.csproj",
       "projectName": "PowerplantServiceTest",
-      "projectPath": "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/PowerplantServiceTest.csproj",
+      "projectPath": "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/PowerplantServiceTest.csproj",
       "packagesPath": "/Users/avikmanna/.nuget/packages/",
-      "outputPath": "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/obj/",
+      "outputPath": "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/avikmanna/.nuget/NuGet/NuGet.Config"
@@ -7223,8 +7223,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj": {
-              "projectPath": "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj"
+            "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj": {
+              "projectPath": "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj"
             }
           }
         }

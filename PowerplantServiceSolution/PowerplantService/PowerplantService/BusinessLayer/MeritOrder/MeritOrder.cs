@@ -45,7 +45,7 @@ namespace PowerplantService.BusinessLayer
                     }
 					else if (p.Type.ToLower() == PowerplantType.windturbine.ToString().ToLower())
 					{
-                        this._powerplant = new WindPowerplant();
+                        this._powerplant = new WindPowerPlant();
                         cost = this._powerplant.CalculatePrice(0, p.Efficiency);
                     }
                     plantCost.Add(p.Name != null ? p.Name: string.Empty, value: cost);

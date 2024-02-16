@@ -25,14 +25,20 @@ namespace PowerplantService.Controllers
         /// <param name="resources">Resources object</param>
         /// <returns>List of powerplant and required power</returns>
         [HttpPost(Name = "productionplan")]
-        public IEnumerable<RequiredPowerplant> DecidePowerplants(Resources resources)
+        [ProducesResponseType(typeof(List<RequiredPowerPlant>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<List<RequiredPowerPlant>> DecidePowerplants(Resources resources)
         {
-            List<RequiredPowerplant> powerplants = new List<RequiredPowerplant>();
+            List<RequiredPowerPlant> powerplants = new List<RequiredPowerPlant>();
             if (resources != null)
             {
                 powerplants = this._plantSelection.SelectPlantAndPower(resources);
+                return Ok(powerplants.ToArray());
             }
-            return powerplants.ToArray();
+            else
+            {
+                return BadRequest();
+            }
         }
 	}
 }

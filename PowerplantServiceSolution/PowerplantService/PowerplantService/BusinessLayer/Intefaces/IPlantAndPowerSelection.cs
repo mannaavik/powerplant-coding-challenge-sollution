@@ -13,7 +13,7 @@ namespace PowerplantService.BusinessLayer.Intefaces
         /// </summary>
         /// <param name="resources">Resources</param>
         /// <returns>Powerplant list with power</returns>
-        List<RequiredPowerplant> SelectPlantAndPower(Resources resources);
+        List<RequiredPowerPlant> SelectPlantAndPower(Resources resources);
     }
 }
 

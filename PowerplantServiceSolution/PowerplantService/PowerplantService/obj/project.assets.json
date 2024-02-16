@@ -1720,11 +1720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj",
+      "projectUniqueName": "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj",
       "projectName": "PowerplantService",
-      "projectPath": "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj",
+      "projectPath": "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/PowerplantService.csproj",
       "packagesPath": "/Users/avikmanna/.nuget/packages/",
-      "outputPath": "/Users/avikmanna/Projects/PowerplantRepo/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/",
+      "outputPath": "/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/avikmanna/.nuget/NuGet/NuGet.Config"
