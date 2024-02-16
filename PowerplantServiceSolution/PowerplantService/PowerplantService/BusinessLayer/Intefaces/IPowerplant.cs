@@ -6,7 +6,7 @@ namespace PowerplantService.BusinessLayer.Intefaces
 	/// <summary>
 	/// Interface to manage plant price and others
 	/// </summary>
-	public interface IPowerplant
+	public interface IPowerPlant
 	{
 		/// <summary>
 		/// Calculate price of powerplant

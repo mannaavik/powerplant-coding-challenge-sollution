@@ -9,7 +9,7 @@ namespace PowerplantService.BusinessLayer
     /// <summary>
     /// Class to manage Wind powerplants
     /// </summary>
-	public class WindPowerPlant: IWindPowerPlant, IPowerplant
+	public class WindPowerPlant: BasePowerPlant
     {
         /// <summary>
         /// Calculate cost of powerplant
@@ -17,7 +17,7 @@ namespace PowerplantService.BusinessLayer
         /// <param name="fuelRate">fuel cost</param>
         /// <param name="efficiency">efficiency</param>
         /// <returns>Cost</returns>
-        public double CalculatePrice(double fuelRate, double efficiency)
+        public override double CalculatePrice(double fuelRate, double efficiency)
         {
             return Math.Round((fuelRate * 100) / (efficiency * 100), 2);
         }
@@ -28,7 +28,7 @@ namespace PowerplantService.BusinessLayer
         /// <param name="wind">current wind value</param>
         /// <param name="pMax">Maximum power</param>
         /// <returns>Current possible maximum power</returns>
-        public double CalculatePMax(double wind, double pMax)
+        public override double CalculatePMax(double wind, double pMax)
         {
             return Math.Round((wind * pMax) / 100, 2);
         }

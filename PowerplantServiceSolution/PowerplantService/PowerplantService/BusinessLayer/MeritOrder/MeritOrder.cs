@@ -11,9 +11,9 @@ namespace PowerplantService.BusinessLayer
     /// </summary>
 	public class MeritOrder : IMeritOrder
     {
-		private IPowerplant _powerplant;
+		private IPowerPlant _powerplant;
 
-		public MeritOrder(IPowerplant Powerplant)
+		public MeritOrder(IPowerPlant Powerplant)
 		{
 			this._powerplant = Powerplant;
 		}
@@ -24,13 +24,13 @@ namespace PowerplantService.BusinessLayer
         /// <param name="fuel">Fuel as input</param>
         /// <param name="powerplants">Powerplant list with all info</param>
         /// <returns>Merit list of powerplant</returns>
-        public Dictionary<string, double> DecideMeritOrder(Fuel fuel, List<Powerplant> powerplants)
+        public Dictionary<string, double> DecideMeritOrder(Fuel fuel, List<PowerPlant> powerplants)
 		{
 			Dictionary<string, double> plantCost = new Dictionary<string, double>();
             Dictionary<string, double> meritOrder = new Dictionary<string, double>();
 
             double cost = 0.0;
-			foreach(Powerplant p in powerplants)
+			foreach(PowerPlant p in powerplants)
 			{
 				if (p != null)
 				{

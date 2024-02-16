@@ -8,7 +8,7 @@ namespace PowerplantService.DataModel
 	{
 		public double Load { get; set; }
         public required Fuel Fuels { get; set; }
-        public required List<Powerplant> Powerplants { get; set; }
+        public required List<PowerPlant> Powerplants { get; set; }
 	}
 
     /// <summary>
@@ -25,7 +25,7 @@ namespace PowerplantService.DataModel
     /// <summary>
     /// Powerplant infos
     /// </summary>
-	public class Powerplant
+	public class PowerPlant
 	{
         public required string Name { get; set; }
         public required string Type { get; set; }

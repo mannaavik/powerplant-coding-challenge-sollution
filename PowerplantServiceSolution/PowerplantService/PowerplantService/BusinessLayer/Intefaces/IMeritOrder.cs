@@ -14,7 +14,7 @@ namespace PowerplantService.BusinessLayer.Intefaces
 		/// <param name="fuel">fule detail</param>
 		/// <param name="powerplants">plants list and info</param>
 		/// <returns>Merit order</returns>
-		public Dictionary<string, double> DecideMeritOrder(Fuel fuel, List<Powerplant> powerplants);
+		public Dictionary<string, double> DecideMeritOrder(Fuel fuel, List<PowerPlant> powerplants);
     }
 }
 

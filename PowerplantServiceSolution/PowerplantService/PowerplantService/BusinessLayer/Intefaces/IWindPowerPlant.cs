@@ -13,6 +13,7 @@ namespace PowerplantService.BusinessLayer.Intefaces
         /// <param name="pMax">Maximum power</param>
         /// <returns>Maximum power at current time</returns>
         public double CalculatePMax(double wind, double pMax);
+
     }
 }
 

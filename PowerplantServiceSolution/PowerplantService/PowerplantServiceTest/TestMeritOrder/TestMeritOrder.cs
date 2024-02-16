@@ -9,10 +9,10 @@ namespace PowerplantServiceTest.TestMeritOrder
 	{
 		[Theory]
         [ClassData(typeof(MeritOrderTestData))]
-		public void TestDecideMeritOrder(Fuel fuel, List<Powerplant> powerplants)
+		public void TestDecideMeritOrder(Fuel fuel, List<PowerPlant> powerplants)
 		{
 			//Arrange
-			IPowerplant pp = new GasPowerplant();
+			IPowerPlant pp = new GasPowerplant();
 			MeritOrder mo = new MeritOrder(pp);
 
 			//Act
@@ -27,17 +27,17 @@ namespace PowerplantServiceTest.TestMeritOrder
 	
 }
 
-public class MeritOrderTestData : TheoryData<Fuel, List<Powerplant>>
+public class MeritOrderTestData : TheoryData<Fuel, List<PowerPlant>>
 {
 	public MeritOrderTestData()
 	{
-		Powerplant p1 = new Powerplant { Name = "gasfiredbig1", Type = "gasfired", Efficiency = 0.53, Pmin = 100, Pmax = 460 };
-        Powerplant p2 = new Powerplant { Name = "gasfiredbig2", Type = "gasfired", Efficiency = 0.53, Pmin = 100, Pmax = 460 };
-        Powerplant p3 = new Powerplant { Name = "gasfiredsomewhatsmaller", Type = "gasfired", Efficiency = 0.3, Pmin = 0, Pmax = 16 };
-        Powerplant p4 = new Powerplant { Name = "tj1", Type = "turbojet", Efficiency = 1, Pmin = 0, Pmax = 150 };
-        Powerplant p5 = new Powerplant { Name = "windpark1", Type = "windturbine", Efficiency = 0.53, Pmin = 100, Pmax = 460 };
-        Powerplant p6 = new Powerplant { Name = "windpark2", Type = "windturbine", Efficiency = 1, Pmin = 0, Pmax = 36 };
-        List<Powerplant> ps = new List<Powerplant>();
+		PowerPlant p1 = new PowerPlant { Name = "gasfiredbig1", Type = "gasfired", Efficiency = 0.53, Pmin = 100, Pmax = 460 };
+        PowerPlant p2 = new PowerPlant { Name = "gasfiredbig2", Type = "gasfired", Efficiency = 0.53, Pmin = 100, Pmax = 460 };
+        PowerPlant p3 = new PowerPlant { Name = "gasfiredsomewhatsmaller", Type = "gasfired", Efficiency = 0.3, Pmin = 0, Pmax = 16 };
+        PowerPlant p4 = new PowerPlant { Name = "tj1", Type = "turbojet", Efficiency = 1, Pmin = 0, Pmax = 150 };
+        PowerPlant p5 = new PowerPlant { Name = "windpark1", Type = "windturbine", Efficiency = 0.53, Pmin = 100, Pmax = 460 };
+        PowerPlant p6 = new PowerPlant { Name = "windpark2", Type = "windturbine", Efficiency = 1, Pmin = 0, Pmax = 36 };
+        List<PowerPlant> ps = new List<PowerPlant>();
 
 		ps.Add(p1);
         ps.Add(p2);

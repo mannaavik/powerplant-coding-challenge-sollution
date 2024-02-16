@@ -35,7 +35,7 @@ namespace PowerplantService.BusinessLayer
             {
                 if (resources.Powerplants.Any(p => p.Name.ToLower() == item.Key.ToLower()))
                 {
-                    Powerplant selectedPlant = resources.Powerplants.Where(p => p.Name.ToLower() == item.Key.ToLower()).First();
+                    PowerPlant selectedPlant = resources.Powerplants.Where(p => p.Name.ToLower() == item.Key.ToLower()).First();
                     RequiredPowerPlant reqPlant = new RequiredPowerPlant();
 
                     switch (selectedPlant.Type.ToLower())

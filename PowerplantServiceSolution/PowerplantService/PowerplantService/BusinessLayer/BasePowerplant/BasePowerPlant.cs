@@ -7,18 +7,23 @@ namespace PowerplantService.BusinessLayer.BasePowerplant
     /// <summary>
     /// Class to manage Wind powerplant feature
     /// </summary>
-	public class BasePowerPlant : IPowerplant
+	public abstract class BasePowerPlant : IPowerPlant, IWindPowerPlant
     {
         /// <summary>
-        /// Calculate cost of powerplant
+        /// Calculate PMax of powerplant
         /// </summary>
         /// <param name="fuelRate">fuel cost</param>
         /// <param name="efficiency">efficiency</param>
         /// <returns>Cost</returns>
-        public virtual double CalculatePrice(double gasRate, double efficiency)
-        {
-            return Math.Round((gasRate * 100) / (efficiency * 100), 2);
-        }
+        public abstract double CalculatePMax(double wind, double pMax);
+
+        /// <summary>
+		/// Calculate price of powerplant
+		/// </summary>
+		/// <param name="fuelRate">Fuel rate</param>
+		/// <param name="efficiency">Efficiency</param>
+		/// <returns>Cost</returns>
+		public abstract double CalculatePrice(double fuelRate, double efficiency);
     }
 }
 
