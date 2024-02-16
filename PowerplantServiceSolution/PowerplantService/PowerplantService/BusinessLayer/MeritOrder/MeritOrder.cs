@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Resources;
 using PowerplantService.BusinessLayer.Intefaces;
 using PowerplantService.DataModel;
 
@@ -33,23 +34,25 @@ namespace PowerplantService.BusinessLayer
 			{
 				if (p != null)
 				{
-					if (p.Type.ToLower() == PowerplantType.gasfired.ToString().ToLower())
-					{
-						this._powerplant = new GasPowerplant();
-                        cost = this._powerplant.CalculatePrice(fuel.GasCost, p.Efficiency);
+                    switch (p.Type.ToLower())
+                    {
+                        case nameof(PowerplantType.gasfired):
+                            this._powerplant = new GasPowerplant();
+                            cost = this._powerplant.CalculatePrice(fuel.GasCost, p.Efficiency);
+                            break;
+                        case nameof(PowerplantType.turbojet):
+                            this._powerplant = new TurbojetPowerplant();
+                            cost = this._powerplant.CalculatePrice(fuel.KerosineCost, p.Efficiency);
+                            break;
+                        case nameof(PowerplantType.windturbine):
+                            this._powerplant = new WindPowerPlant();
+                            cost = this._powerplant.CalculatePrice(0, p.Efficiency);
+                            break;
+                        default:
+                            break;
                     }
-					else if (p.Type.ToLower() == PowerplantType.turbojet.ToString().ToLower())
-					{
-                        this._powerplant = new TurbojetPowerplant();
-                        cost = this._powerplant.CalculatePrice(fuel.KerosineCost, p.Efficiency);
-                    }
-					else if (p.Type.ToLower() == PowerplantType.windturbine.ToString().ToLower())
-					{
-                        this._powerplant = new WindPowerPlant();
-                        cost = this._powerplant.CalculatePrice(0, p.Efficiency);
-                    }
+
                     plantCost.Add(p.Name != null ? p.Name: string.Empty, value: cost);
-                    
                 }
 			}
 

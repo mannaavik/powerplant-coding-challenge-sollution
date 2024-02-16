@@ -37,19 +37,22 @@ namespace PowerplantService.BusinessLayer
                 {
                     Powerplant selectedPlant = resources.Powerplants.Where(p => p.Name.ToLower() == item.Key.ToLower()).First();
                     RequiredPowerPlant reqPlant = new RequiredPowerPlant();
-                    if (selectedPlant.Type.ToLower() == PowerplantType.gasfired.ToString().ToLower())
+
+                    switch (selectedPlant.Type.ToLower())
                     {
-                        reqPlant.P = DeterminePower(alreadyGeneratedPower, selectedPlant.Pmax, resources.Load);
-                    }
-                    else if (selectedPlant.Type.ToLower() == PowerplantType.turbojet.ToString().ToLower())
-                    {
-                        reqPlant.P = DeterminePower(alreadyGeneratedPower, selectedPlant.Pmax, resources.Load);
-                    }
-                    else if (selectedPlant.Type.ToLower() == PowerplantType.windturbine.ToString().ToLower())
-                    {
-                        this._windPowerplant = new WindPowerPlant();
-                        double pMaxBasedOnWind = this._windPowerplant.CalculatePMax(resources.Fuels.Wind, selectedPlant.Pmax);
-                        reqPlant.P = DeterminePower(alreadyGeneratedPower, pMaxBasedOnWind, resources.Load);
+                        case nameof(PowerplantType.gasfired):
+                            reqPlant.P = DeterminePower(alreadyGeneratedPower, selectedPlant.Pmax, resources.Load);
+                            break;
+                        case nameof(PowerplantType.turbojet):
+                            reqPlant.P = DeterminePower(alreadyGeneratedPower, selectedPlant.Pmax, resources.Load);
+                            break;
+                        case nameof(PowerplantType.windturbine):
+                            this._windPowerplant = new WindPowerPlant();
+                            double pMaxBasedOnWind = this._windPowerplant.CalculatePMax(resources.Fuels.Wind, selectedPlant.Pmax);
+                            reqPlant.P = DeterminePower(alreadyGeneratedPower, pMaxBasedOnWind, resources.Load);
+                            break;
+                        default:
+                            break;
                     }
 
                     reqPlant.Name = selectedPlant.Name;

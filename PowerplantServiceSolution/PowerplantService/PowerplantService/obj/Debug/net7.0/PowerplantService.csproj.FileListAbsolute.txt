@@ -56,13 +56,6 @@
 /Users/avikmanna/Projects/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.pdb
 /Users/avikmanna/Projects/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.genruntimeconfig.cache
 /Users/avikmanna/Projects/PowerplantService/PowerplantService/obj/Debug/net7.0/ref/PowerplantService.dll
-/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.csproj.AssemblyReference.cache
-/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.GeneratedMSBuildEditorConfig.editorconfig
-/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.AssemblyInfoInputs.cache
-/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.AssemblyInfo.cs
-/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.csproj.CoreCompileInputs.cache
-/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.MvcApplicationPartsAssemblyInfo.cs
-/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.MvcApplicationPartsAssemblyInfo.cache
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/bin/Debug/net7.0/appsettings.Development.json
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/bin/Debug/net7.0/appsettings.json
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/bin/Debug/net7.0/PowerplantService
@@ -100,6 +93,13 @@
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/bin/Debug/net7.0/System.Text.Encodings.Web.dll
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/bin/Debug/net7.0/System.Text.Json.dll
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/bin/Debug/net7.0/runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll
+/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.csproj.AssemblyReference.cache
+/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.AssemblyInfoInputs.cache
+/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.AssemblyInfo.cs
+/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.csproj.CoreCompileInputs.cache
+/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.MvcApplicationPartsAssemblyInfo.cs
+/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/PowerplantService.MvcApplicationPartsAssemblyInfo.cache
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/staticwebassets/msbuild.PowerplantService.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/staticwebassets/msbuild.build.PowerplantService.props
 /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.PowerplantService.props
