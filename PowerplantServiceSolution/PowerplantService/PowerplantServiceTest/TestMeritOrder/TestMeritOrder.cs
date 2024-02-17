@@ -12,7 +12,7 @@ namespace PowerplantServiceTest.TestMeritOrder
 		public void TestDecideMeritOrder(Fuel fuel, List<PowerPlant> powerplants)
 		{
 			//Arrange
-			IPowerPlant pp = new GasPowerplant();
+			IFuelPowerPlant pp = new GasPowerplant();
 			MeritOrder mo = new MeritOrder(pp);
 
 			//Act

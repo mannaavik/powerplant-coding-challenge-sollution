@@ -21,9 +21,9 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 
 //Adding dependencies
-builder.Services.AddScoped<IPowerPlant, GasPowerplant>();
-builder.Services.AddScoped<IPowerPlant, TurbojetPowerplant>();
-builder.Services.AddScoped<IPowerPlant, WindPowerPlant>();
+builder.Services.AddScoped<IFuelPowerPlant, GasPowerplant>();
+builder.Services.AddScoped<IFuelPowerPlant, TurbojetPowerplant>();
+builder.Services.AddScoped<IFuelPowerPlant, WindPowerPlant>();
 builder.Services.AddScoped<IWindPowerPlant, WindPowerPlant>();
 builder.Services.AddScoped<IMeritOrder, MeritOrder>();
 builder.Services.AddScoped<IPlantAndPowerSelection, PlantAndPowerSelection>();
@@ -52,8 +52,3 @@ app.UseMiddlewareClassTemplate();
 app.MapControllers();
 
 app.Run();
-
-
-
-
-

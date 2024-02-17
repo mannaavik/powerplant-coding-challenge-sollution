@@ -7,7 +7,7 @@ namespace PowerplantService.BusinessLayer.BasePowerplant
     /// <summary>
     /// Class to manage Wind powerplant feature
     /// </summary>
-	public abstract class BasePowerPlant : IPowerPlant, IWindPowerPlant
+	public abstract class BasePowerPlant : IFuelPowerPlant, IWindPowerPlant
     {
         /// <summary>
         /// Calculate PMax of powerplant

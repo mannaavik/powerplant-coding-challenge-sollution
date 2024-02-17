@@ -11,9 +11,9 @@ namespace PowerplantService.BusinessLayer
     /// </summary>
 	public class MeritOrder : IMeritOrder
     {
-		private IPowerPlant _powerplant;
+		private IFuelPowerPlant _powerplant;
 
-		public MeritOrder(IPowerPlant Powerplant)
+		public MeritOrder(IFuelPowerPlant Powerplant)
 		{
 			this._powerplant = Powerplant;
 		}

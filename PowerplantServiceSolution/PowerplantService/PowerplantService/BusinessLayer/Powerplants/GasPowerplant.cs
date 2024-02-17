@@ -9,7 +9,7 @@ namespace PowerplantService.BusinessLayer
 	/// <summary>
 	/// Class to manage Gas powerplants
 	/// </summary>
-	public class GasPowerplant : IPowerPlant
+	public class GasPowerplant : IFuelPowerPlant
     {
         /// <summary>
         /// Calculate cost of powerplant
