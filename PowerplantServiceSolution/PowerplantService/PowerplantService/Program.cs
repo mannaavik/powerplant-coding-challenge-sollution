@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Extensions.Configuration;
 using PowerplantService.BusinessLayer;
 using PowerplantService.BusinessLayer.BasePowerplant;
 using PowerplantService.BusinessLayer.Intefaces;
@@ -9,9 +10,13 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 //Integrating Serilog for global error handling in file system
+
+var configuration = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json")
+            .Build();
+
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .WriteTo.File("PowerserviceLog/log.txt", (Serilog.Events.LogEventLevel)RollingInterval.Hour)
+    .ReadFrom.Configuration(configuration)
     .CreateLogger();
 
 builder.Host.UseSerilog();

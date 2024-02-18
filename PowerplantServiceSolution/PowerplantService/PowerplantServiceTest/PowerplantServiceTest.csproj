@@ -27,8 +27,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="TestMeritOrder\" />
+    <None Remove="TestControllers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TestMeritOrder\" />
+    <Folder Include="TestControllers\" />
   </ItemGroup>
 </Project>

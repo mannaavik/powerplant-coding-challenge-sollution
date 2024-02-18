@@ -27,7 +27,7 @@ namespace PowerplantService.Controllers
         [HttpPost(Name = "productionplan")]
         [ProducesResponseType(typeof(List<RequiredPowerPlant>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<List<RequiredPowerPlant>> DecidePowerplants(Resources resources)
+        public IActionResult DecidePowerplants(Resources resources)
         {
             List<RequiredPowerPlant> powerplants = new List<RequiredPowerPlant>();
             if (resources != null)

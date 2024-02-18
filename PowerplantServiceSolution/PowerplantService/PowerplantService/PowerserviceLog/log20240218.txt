@@ -1,0 +1,479 @@
+2024-02-18 02:33:30.920 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 02:33:30.934 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 02:33:30.934 +01:00 [INF] Hosting environment: Development
+2024-02-18 02:33:30.934 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 02:33:32.176 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 02:33:32.248 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 72.4337ms
+2024-02-18 02:33:32.299 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 02:33:32.341 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 42.0773ms
+2024-02-18 02:33:36.456 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 246
+2024-02-18 02:33:36.464 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 02:33:36.489 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 02:33:39.288 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 2795.3535ms
+2024-02-18 02:33:39.291 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 02:33:39.311 +01:00 [ERR] {"StatusCode":500,"Message":"The input string \u0027dd\u0027 was not in a correct format.","Level":"Exception","Detail":"   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, ReadOnlySpan\u00601 value, TypeCode type)\n   at System.Convert.ToInt32(String value)\n   at PowerplantService.Controllers.PowerplantController.DecidePowerplants(Resources resources) in /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/Controllers/PowerplantController.cs:line 32\n   at lambda_method2(Closure, Object, Object[])\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeFilterPipelineAsync\u003Eg__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Logged|17_1(ResourceInvoker invoker)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Logged|17_1(ResourceInvoker invoker)\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\n   at PowerplantService.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService/Middleware/ExceptionMiddleware.cs:line 30"}
+2024-02-18 02:33:39.311 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 246 - 200 0 - 2855.9116ms
+2024-02-18 17:51:30.580 +01:00 [INF] Now listening on: http://localhost:8888
+2024-02-18 17:51:30.599 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 17:51:30.599 +01:00 [INF] Hosting environment: Development
+2024-02-18 17:51:30.599 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 17:51:31.718 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8888/swagger - -
+2024-02-18 17:51:31.733 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8888/swagger - - - 301 0 - 16.0380ms
+2024-02-18 17:51:31.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8888/swagger/index.html - -
+2024-02-18 17:51:31.788 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 52.5644ms
+2024-02-18 17:51:31.795 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8888/swagger/swagger-ui.css - -
+2024-02-18 17:51:31.796 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8888/swagger/swagger-ui-bundle.js - -
+2024-02-18 17:51:31.796 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8888/swagger/swagger-ui-standalone-preset.js - -
+2024-02-18 17:51:32.026 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-18 17:51:32.026 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-18 17:51:32.027 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-18 17:51:32.029 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8888/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 232.7107ms
+2024-02-18 17:51:32.029 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8888/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 232.8938ms
+2024-02-18 17:51:32.029 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8888/swagger/swagger-ui.css - - - 200 144929 text/css 233.2518ms
+2024-02-18 17:51:32.104 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 17:51:32.113 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8888/swagger/favicon-32x32.png - -
+2024-02-18 17:51:32.113 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-18 17:51:32.113 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8888/swagger/favicon-32x32.png - - - 200 628 image/png 0.8699ms
+2024-02-18 17:51:32.168 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 64.0320ms
+2024-02-18 18:02:34.038 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 18:02:34.048 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 18:02:34.049 +01:00 [INF] Hosting environment: Development
+2024-02-18 18:02:34.049 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 18:02:35.349 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 18:02:35.428 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 80.6899ms
+2024-02-18 18:02:35.438 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/swagger-ui-standalone-preset.js - -
+2024-02-18 18:02:35.440 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/swagger-ui-bundle.js - -
+2024-02-18 18:02:35.557 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-18 18:02:35.558 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 119.0785ms
+2024-02-18 18:02:35.560 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-18 18:02:35.562 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 121.4532ms
+2024-02-18 18:02:35.636 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 18:02:35.680 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 43.8971ms
+2024-02-18 18:14:44.349 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 18:14:44.360 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 18:14:44.360 +01:00 [INF] Hosting environment: Development
+2024-02-18 18:14:44.360 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 18:14:45.581 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 18:14:45.652 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 71.6673ms
+2024-02-18 18:14:45.757 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 18:14:45.797 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.3858ms
+2024-02-18 18:11:51.682 +00:00 [INF] Now listening on: https://[::]:443
+2024-02-18 18:11:51.695 +00:00 [INF] Now listening on: http://[::]:80
+2024-02-18 18:11:51.697 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 18:11:51.697 +00:00 [INF] Hosting environment: Development
+2024-02-18 18:11:51.697 +00:00 [INF] Content root path: /app
+2024-02-18 18:11:51.738 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:49738/swagger - -
+2024-02-18 18:11:51.761 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:49738/swagger - - - 301 0 - 24.2641ms
+2024-02-18 18:11:51.763 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:49738/swagger/index.html - -
+2024-02-18 18:11:51.818 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:49738/swagger/index.html - - - 200 - text/html;charset=utf-8 55.3452ms
+2024-02-18 18:11:51.913 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger - -
+2024-02-18 18:11:51.915 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger - - - 301 0 - 2.5617ms
+2024-02-18 18:11:51.924 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/index.html - -
+2024-02-18 18:11:51.930 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/index.html - - - 200 - text/html;charset=utf-8 6.7637ms
+2024-02-18 18:11:51.935 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/swagger-ui.css - -
+2024-02-18 18:11:51.935 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/swagger-ui-standalone-preset.js - -
+2024-02-18 18:11:51.935 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/swagger-ui-bundle.js - -
+2024-02-18 18:11:52.102 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-18 18:11:52.102 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-18 18:11:52.103 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 167.8412ms
+2024-02-18 18:11:52.103 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/swagger-ui.css - - - 200 144929 text/css 168.0832ms
+2024-02-18 18:11:52.116 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-18 18:11:52.116 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 181.0821ms
+2024-02-18 18:11:52.186 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/v1/swagger.json - -
+2024-02-18 18:11:52.193 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/favicon-32x32.png - -
+2024-02-18 18:11:52.194 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-18 18:11:52.194 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/favicon-32x32.png - - - 200 628 image/png 1.4482ms
+2024-02-18 18:11:52.237 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 51.0493ms
+2024-02-18 18:12:54.886 +00:00 [INF] Now listening on: https://[::]:443
+2024-02-18 18:12:54.899 +00:00 [INF] Now listening on: http://[::]:80
+2024-02-18 18:12:54.900 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 18:12:54.900 +00:00 [INF] Hosting environment: Development
+2024-02-18 18:12:54.900 +00:00 [INF] Content root path: /app
+2024-02-18 18:12:54.966 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:49738/swagger - -
+2024-02-18 18:12:54.988 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:49738/swagger - - - 301 0 - 22.9290ms
+2024-02-18 18:12:54.990 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:49738/swagger/index.html - -
+2024-02-18 18:12:55.047 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:49738/swagger/index.html - - - 200 - text/html;charset=utf-8 56.9627ms
+2024-02-18 18:12:55.088 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/index.html - -
+2024-02-18 18:12:55.124 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/index.html - - - 200 - text/html;charset=utf-8 35.7323ms
+2024-02-18 18:12:55.224 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49738/swagger/v1/swagger.json - -
+2024-02-18 18:12:55.277 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49738/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 53.0604ms
+2024-02-18 18:13:07.831 +00:00 [INF] Request starting HTTP/2 POST https://localhost:49738/Powerplant application/json 663
+2024-02-18 18:13:07.838 +00:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 18:13:07.862 +00:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 18:13:07.902 +00:00 [INF] Executing OkObjectResult, writing value of type 'PowerplantService.DataModel.RequiredPowerPlant[]'.
+2024-02-18 18:13:07.907 +00:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 43.505ms
+2024-02-18 18:13:07.908 +00:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 18:13:07.908 +00:00 [INF] Request finished HTTP/2 POST https://localhost:49738/Powerplant application/json 663 - 200 - application/json;+charset=utf-8 78.2507ms
+2024-02-18 18:23:16.858 +00:00 [INF] Now listening on: https://[::]:443
+2024-02-18 18:23:16.870 +00:00 [INF] Now listening on: http://[::]:80
+2024-02-18 18:23:16.871 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 18:23:16.871 +00:00 [INF] Hosting environment: Development
+2024-02-18 18:23:16.872 +00:00 [INF] Content root path: /app
+2024-02-18 18:23:16.915 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:49940/swagger - -
+2024-02-18 18:23:16.936 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:49940/swagger - - - 301 0 - 22.0033ms
+2024-02-18 18:23:16.938 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:49940/swagger/index.html - -
+2024-02-18 18:23:16.991 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:49940/swagger/index.html - - - 200 - text/html;charset=utf-8 53.2513ms
+2024-02-18 18:23:17.047 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49940/swagger - -
+2024-02-18 18:23:17.049 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49940/swagger - - - 301 0 - 2.4508ms
+2024-02-18 18:23:17.056 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49940/swagger/index.html - -
+2024-02-18 18:23:17.062 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49940/swagger/index.html - - - 200 - text/html;charset=utf-8 5.9389ms
+2024-02-18 18:23:17.112 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49940/swagger/swagger-ui-bundle.js - -
+2024-02-18 18:23:17.112 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49940/swagger/swagger-ui.css - -
+2024-02-18 18:23:17.112 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49940/swagger/swagger-ui-standalone-preset.js - -
+2024-02-18 18:23:17.190 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-18 18:23:17.190 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-18 18:23:17.191 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49940/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 78.6459ms
+2024-02-18 18:23:17.190 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49940/swagger/swagger-ui.css - - - 200 144929 text/css 100.9719ms
+2024-02-18 18:23:17.228 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-18 18:23:17.229 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49940/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 117.0110ms
+2024-02-18 18:23:17.297 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49940/swagger/v1/swagger.json - -
+2024-02-18 18:23:17.304 +00:00 [INF] Request starting HTTP/2 GET https://localhost:49940/swagger/favicon-32x32.png - -
+2024-02-18 18:23:17.305 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-18 18:23:17.305 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49940/swagger/favicon-32x32.png - - - 200 628 image/png 1.5341ms
+2024-02-18 18:23:17.349 +00:00 [INF] Request finished HTTP/2 GET https://localhost:49940/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.5279ms
+2024-02-18 18:23:34.332 +00:00 [INF] Request starting HTTP/2 POST https://localhost:49940/Powerplant application/json 663
+2024-02-18 18:23:34.337 +00:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 18:23:34.356 +00:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 18:23:34.397 +00:00 [INF] Executing OkObjectResult, writing value of type 'PowerplantService.DataModel.RequiredPowerPlant[]'.
+2024-02-18 18:23:34.403 +00:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 44.6163ms
+2024-02-18 18:23:34.403 +00:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 18:23:34.404 +00:00 [INF] Request finished HTTP/2 POST https://localhost:49940/Powerplant application/json 663 - 200 - application/json;+charset=utf-8 72.7646ms
+2024-02-18 19:26:44.567 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:26:44.577 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:26:44.577 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:26:44.577 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:26:45.750 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:26:45.822 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 72.9862ms
+2024-02-18 19:26:45.875 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:26:45.916 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.4041ms
+2024-02-18 19:27:48.764 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
+2024-02-18 19:27:48.824 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:27:48.856 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:29:21.228 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:29:21.241 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:29:21.241 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:29:21.241 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:29:22.340 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:29:22.410 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 70.9969ms
+2024-02-18 19:29:22.459 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:29:22.499 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.1033ms
+2024-02-18 19:31:07.529 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:31:07.539 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:31:07.539 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:31:07.539 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:31:08.766 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:31:08.839 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 73.5354ms
+2024-02-18 19:31:08.891 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:31:08.932 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.9153ms
+2024-02-18 19:31:14.184 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
+2024-02-18 19:31:14.196 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:31:14.216 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:34:11.223 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:34:11.234 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:34:11.234 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:34:11.234 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:34:12.382 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:34:12.453 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 72.0198ms
+2024-02-18 19:34:12.504 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:34:12.545 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.3499ms
+2024-02-18 19:34:15.897 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
+2024-02-18 19:34:15.906 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:34:15.926 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:37:19.909 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:37:19.919 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:37:19.920 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:37:19.920 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:37:21.106 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:37:21.178 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 73.4135ms
+2024-02-18 19:37:21.229 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:37:21.270 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.0785ms
+2024-02-18 19:37:25.616 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
+2024-02-18 19:37:25.625 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:37:25.647 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:38:11.380 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:38:11.390 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:38:11.390 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:38:11.390 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:38:12.565 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:38:12.636 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 72.5574ms
+2024-02-18 19:38:12.688 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:38:12.730 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.2855ms
+2024-02-18 19:38:19.669 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
+2024-02-18 19:38:19.677 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:38:19.702 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:55:40.970 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:55:40.981 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:55:40.981 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:55:40.981 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:55:42.126 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:55:42.196 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 71.5085ms
+2024-02-18 19:55:42.244 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:55:42.285 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.7450ms
+2024-02-18 19:55:55.255 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:55:55.263 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:55:55.285 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:55:55.299 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:55:55.310 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 22.437ms
+2024-02-18 19:55:55.311 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:55:55.311 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 56.0160ms
+2024-02-18 19:55:58.960 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:55:58.961 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:55:58.961 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:55:58.963 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:55:58.964 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 2.8106ms
+2024-02-18 19:55:58.964 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:55:58.964 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 3.9677ms
+2024-02-18 19:56:09.612 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:56:09.612 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:09.612 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:56:09.615 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:56:09.616 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 3.3966ms
+2024-02-18 19:56:09.616 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:09.616 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 4.0926ms
+2024-02-18 19:56:16.775 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4
+2024-02-18 19:56:16.775 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:16.775 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:56:16.797 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:56:16.797 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 21.8112ms
+2024-02-18 19:56:16.797 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:16.797 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4 - 400 - application/problem+json;+charset=utf-8 22.4410ms
+2024-02-18 19:56:17.520 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4
+2024-02-18 19:56:17.521 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:17.521 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:56:17.523 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:56:17.523 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 2.1905ms
+2024-02-18 19:56:17.523 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:17.524 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4 - 400 - application/problem+json;+charset=utf-8 3.3426ms
+2024-02-18 19:56:25.901 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:56:25.912 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:56:25.912 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:56:25.912 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:56:27.046 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:56:27.118 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 72.4747ms
+2024-02-18 19:56:27.171 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:56:27.211 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.6408ms
+2024-02-18 19:56:33.346 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:56:33.357 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:33.378 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:56:33.393 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:56:33.404 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 24.0813ms
+2024-02-18 19:56:33.405 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:33.405 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 58.8657ms
+2024-02-18 19:56:47.443 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4
+2024-02-18 19:56:47.443 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:47.443 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:56:47.461 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:56:47.462 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 18.2583ms
+2024-02-18 19:56:47.462 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:47.462 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4 - 400 - application/problem+json;+charset=utf-8 20.6135ms
+2024-02-18 19:56:52.749 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 2
+2024-02-18 19:56:52.749 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:52.749 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:56:52.759 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:56:52.759 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 9.4974ms
+2024-02-18 19:56:52.759 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:56:52.759 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 2 - 400 - application/problem+json;+charset=utf-8 10.1040ms
+2024-02-18 19:57:52.433 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:57:52.443 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:57:52.444 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:57:52.444 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:57:53.631 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:57:53.703 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 73.2725ms
+2024-02-18 19:57:53.753 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:57:53.793 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.3125ms
+2024-02-18 19:58:10.510 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:58:10.521 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:58:10.521 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:58:10.521 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:58:11.724 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:58:11.800 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 77.5073ms
+2024-02-18 19:58:11.850 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:58:11.892 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.1007ms
+2024-02-18 19:58:25.270 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
+2024-02-18 19:58:25.279 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:25.302 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:35.487 +01:00 [INF] Executing OkObjectResult, writing value of type 'PowerplantService.DataModel.RequiredPowerPlant[]'.
+2024-02-18 19:58:35.497 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 10192.7311ms
+2024-02-18 19:58:35.498 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:35.499 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663 - 200 - application/json;+charset=utf-8 10228.5560ms
+2024-02-18 19:58:52.372 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:58:52.372 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:52.372 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:52.377 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:58:52.383 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 10.2398ms
+2024-02-18 19:58:52.383 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:52.383 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 11.4865ms
+2024-02-18 19:58:53.939 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:58:53.939 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:53.939 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:53.949 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:58:53.949 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 10.072ms
+2024-02-18 19:58:53.949 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:53.949 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 10.9287ms
+2024-02-18 19:58:54.474 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:58:54.474 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.474 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:54.475 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:58:54.475 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.6995ms
+2024-02-18 19:58:54.475 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.476 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 1.6372ms
+2024-02-18 19:58:54.669 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:58:54.670 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.670 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:54.670 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:58:54.670 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.3869ms
+2024-02-18 19:58:54.670 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.670 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 0.8340ms
+2024-02-18 19:58:54.835 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:58:54.836 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.836 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:54.836 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:58:54.836 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.6446ms
+2024-02-18 19:58:54.836 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.837 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 1.3716ms
+2024-02-18 19:58:54.983 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:58:54.983 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.983 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:54.984 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:58:54.984 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.6743ms
+2024-02-18 19:58:54.984 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:54.986 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 2.6154ms
+2024-02-18 19:58:55.146 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0
+2024-02-18 19:58:55.146 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:55.146 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:58:55.147 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:58:55.147 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.5067ms
+2024-02-18 19:58:55.147 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:58:55.147 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 0 - 400 - application/problem+json;+charset=utf-8 1.0877ms
+2024-02-18 19:59:19.902 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 19:59:19.913 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 19:59:19.913 +01:00 [INF] Hosting environment: Development
+2024-02-18 19:59:19.913 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 19:59:21.034 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 19:59:21.104 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 70.3709ms
+2024-02-18 19:59:21.155 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 19:59:21.197 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.8158ms
+2024-02-18 19:59:26.800 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 246
+2024-02-18 19:59:26.809 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:26.833 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:59:36.930 +01:00 [INF] Executing OkObjectResult, writing value of type 'PowerplantService.DataModel.RequiredPowerPlant[]'.
+2024-02-18 19:59:36.941 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 10105.4775ms
+2024-02-18 19:59:36.942 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:36.942 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 246 - 200 - application/json;+charset=utf-8 10141.8972ms
+2024-02-18 19:59:40.622 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 246
+2024-02-18 19:59:40.622 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:40.623 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:59:43.528 +01:00 [INF] Executing OkObjectResult, writing value of type 'PowerplantService.DataModel.RequiredPowerPlant[]'.
+2024-02-18 19:59:43.529 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 2905.8766ms
+2024-02-18 19:59:43.529 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:43.529 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 246 - 200 - application/json;+charset=utf-8 2907.0877ms
+2024-02-18 19:59:51.041 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4
+2024-02-18 19:59:51.041 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:51.041 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:59:51.052 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:59:51.057 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 15.8725ms
+2024-02-18 19:59:51.058 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:51.058 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4 - 400 - application/problem+json;+charset=utf-8 16.6845ms
+2024-02-18 19:59:51.806 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4
+2024-02-18 19:59:51.806 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:51.807 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:59:51.808 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:59:51.808 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 1.3871ms
+2024-02-18 19:59:51.808 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:51.808 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4 - 400 - application/problem+json;+charset=utf-8 2.0960ms
+2024-02-18 19:59:52.057 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4
+2024-02-18 19:59:52.057 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:52.058 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:59:52.059 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:59:52.059 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 1.546ms
+2024-02-18 19:59:52.059 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:52.059 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4 - 400 - application/problem+json;+charset=utf-8 2.3460ms
+2024-02-18 19:59:52.249 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4
+2024-02-18 19:59:52.250 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:52.250 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 19:59:52.252 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 19:59:52.253 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 2.784ms
+2024-02-18 19:59:52.253 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 19:59:52.253 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 4 - 400 - application/problem+json;+charset=utf-8 4.4707ms
+2024-02-18 20:00:53.397 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 20:00:53.407 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 20:00:53.408 +01:00 [INF] Hosting environment: Development
+2024-02-18 20:00:53.408 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 20:00:54.551 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 20:00:54.620 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 70.9075ms
+2024-02-18 20:00:54.673 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 20:00:54.713 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.1790ms
+2024-02-18 20:01:13.230 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0
+2024-02-18 20:01:13.240 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:13.265 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:13.278 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:13.289 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 22.4431ms
+2024-02-18 20:01:13.290 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:13.290 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0 - 400 - application/problem+json;+charset=utf-8 59.8644ms
+2024-02-18 20:01:15.235 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0
+2024-02-18 20:01:15.235 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:15.235 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:15.238 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:15.238 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 2.828ms
+2024-02-18 20:01:15.238 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:15.238 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0 - 400 - application/problem+json;+charset=utf-8 4.0140ms
+2024-02-18 20:01:15.730 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0
+2024-02-18 20:01:15.730 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:15.730 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:15.734 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:15.734 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 4.1384ms
+2024-02-18 20:01:15.734 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:15.735 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0 - 400 - application/problem+json;+charset=utf-8 4.8104ms
+2024-02-18 20:01:15.892 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0
+2024-02-18 20:01:15.892 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:15.893 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:15.893 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:15.894 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.9ms
+2024-02-18 20:01:15.894 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:15.894 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0 - 400 - application/problem+json;+charset=utf-8 1.6590ms
+2024-02-18 20:01:16.033 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0
+2024-02-18 20:01:16.033 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:16.033 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:16.034 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:16.036 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 3.0205ms
+2024-02-18 20:01:16.037 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:16.037 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0 - 400 - application/problem+json;+charset=utf-8 4.0347ms
+2024-02-18 20:01:16.194 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0
+2024-02-18 20:01:16.194 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:16.194 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:16.194 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:16.195 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.5143ms
+2024-02-18 20:01:16.195 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:16.195 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0 - 400 - application/problem+json;+charset=utf-8 1.1171ms
+2024-02-18 20:01:16.345 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0
+2024-02-18 20:01:16.345 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:16.345 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:16.346 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:16.346 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 0.5781ms
+2024-02-18 20:01:16.346 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:16.346 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant text/json 0 - 400 - application/problem+json;+charset=utf-8 1.2310ms
+2024-02-18 20:01:28.830 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 8
+2024-02-18 20:01:28.830 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:28.831 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:28.854 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:28.855 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 24.4454ms
+2024-02-18 20:01:28.855 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:28.855 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 8 - 400 - application/problem+json;+charset=utf-8 25.1134ms
+2024-02-18 20:01:29.923 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 8
+2024-02-18 20:01:29.924 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:29.924 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 20:01:29.925 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-18 20:01:29.925 +01:00 [INF] Executed action PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService) in 1.4391ms
+2024-02-18 20:01:29.925 +01:00 [INF] Executed endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:01:29.925 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:8888/Powerplant application/json 8 - 400 - application/problem+json;+charset=utf-8 2.0659ms
+2024-02-18 20:17:53.934 +01:00 [INF] Now listening on: https://localhost:8888
+2024-02-18 20:17:53.944 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 20:17:53.944 +01:00 [INF] Hosting environment: Development
+2024-02-18 20:17:53.944 +01:00 [INF] Content root path: /Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantService
+2024-02-18 20:17:55.165 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/index.html - -
+2024-02-18 20:17:55.239 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/index.html - - - 200 - text/html;charset=utf-8 75.5147ms
+2024-02-18 20:17:55.292 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - -
+2024-02-18 20:17:55.332 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:8888/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 40.4845ms
+2024-02-18 20:17:59.527 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
+2024-02-18 20:17:59.536 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
+2024-02-18 20:17:59.561 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).

@@ -1,58 +1,56 @@
 ﻿<Properties StartupConfiguration="{03737585-5AC1-4E0D-BA7B-E57949322CDC}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/TestMeritOrder/TestMeritOrder.cs" relfile="PowerplantServiceTest/TestMeritOrder/TestMeritOrder.cs" line="22" column="1" />
+      <Breakpoint file="/Users/avikmanna/Projects/PPS/powerplant-coding-challenge-sollution/PowerplantServiceSolution/PowerplantService/PowerplantServiceTest/TestMeritOrder/TestMeritOrder.cs" relfile="PowerplantServiceTest/TestMeritOrder/TestMeritOrder.cs" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PowerplantServiceTest PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PowerplantServiceTest/TestControllers/TestPowerolantController.cs">
+  <MonoDevelop.Ide.ItemProperties.PowerplantService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PowerplantService/Dockerfile">
     <Files>
-      <File FileName="PowerplantService/DataModel/Resources.cs" Line="25" Column="27" />
-      <File FileName="PowerplantService/Program.cs" Line="26" Column="1" />
+      <File FileName="PowerplantService/Program.cs" Line="45" Column="2" />
       <File FileName="PowerplantService/BusinessLayer/MeritOrder/MeritOrder.cs" />
-      <File FileName="PowerplantService/Controllers/WeatherForecastController.cs" Line="34" Column="1" />
-      <File FileName="PowerplantService/Controllers/PowerplantController.cs" Line="20" Column="65" />
-      <File FileName="PowerplantService/DataModel/RequiredPowerplant.cs" Line="6" Column="1" />
-      <File FileName="PowerplantService/appsettings.json" Line="11" Column="1" />
-      <File FileName="PowerplantService/WeatherForecast.cs" />
+      <File FileName="PowerplantService/Controllers/PowerplantController.cs" />
+      <File FileName="PowerplantService/DataModel/RequiredPowerplant.cs" />
+      <File FileName="PowerplantService/appsettings.json" />
       <File FileName="PowerplantService/Properties/launchSettings.json" />
-      <File FileName="PowerplantService/BusinessLayer/PlantAndPowerSelection/PlantAndPowerSelection.cs" Line="1" Column="1" />
-      <File FileName="PowerplantService/DataModel/ErrorInfo.cs" Line="11" Column="28" />
-      <File FileName="PowerplantService/Middleware/ExceptionMiddleware.cs" Line="21" Column="12" />
-      <File FileName="PowerplantService/BusinessLayer/Intefaces/ILogger.cs" Line="10" Column="1" />
-      <File FileName="PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" Line="12" Column="1" />
-      <File FileName="PowerplantServiceTest/UnitTest1.cs" Line="1" Column="1" />
-      <File FileName="PowerplantServiceTest/TestControllers/TestPowerolantController.cs" Line="25" Column="1" />
-      <File FileName="PowerplantServiceTest/InputOutputData/RequestInput.cs" Line="39" Column="2" />
+      <File FileName="PowerplantService/BusinessLayer/PlantAndPowerSelection/PlantAndPowerSelection.cs" />
+      <File FileName="PowerplantService/DataModel/ErrorInfo.cs" />
+      <File FileName="PowerplantService/Middleware/ExceptionMiddleware.cs" />
+      <File FileName="PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" />
+      <File FileName="PowerplantService/BusinessLayer/Powerplants/GasPowerplant.cs" />
+      <File FileName="PowerplantService/BusinessLayer/Powerplants/TurbojetPowerplant.cs" />
+      <File FileName="PowerplantService/BusinessLayer/Powerplants/WindPowerplant.cs" />
+      <File FileName="PowerplantService/BusinessLayer/Intefaces/IWindPowerPlant.cs" />
+      <File FileName="PowerplantService/BusinessLayer/Intefaces/IPlantAndPowerSelection.cs" />
+      <File FileName="PowerplantServiceTest/TestMeritOrder/TestMeritOrder.cs" />
+      <File FileName="PowerplantService/BusinessLayer/Intefaces/IMeritOrder.cs" />
+      <File FileName="PowerplantService/BusinessLayer/Intefaces/ILoggerService.cs" />
+      <File FileName="PowerplantService/PowerserviceLog/log20240218.txt" />
+      <File FileName="../../../../../../../Applications/Visual Studio.app/Contents/MonoBundle/AddIns/MonoDevelop.Docker/MSbuild/Sdks/Microsoft.Docker.Sdk/build/Microsoft.VisualStudio.Docker.Compose.targets" />
+      <File FileName="PowerplantService/Dockerfile" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PowerplantService" expanded="True">
-            <Node name="PowerplantService" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="BusinessLayer" expanded="True">
-                <Node name="LoggerService" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="DataModel" expanded="True" />
-              <Node name="Middleware" expanded="True" />
-              <Node name="Properties" expanded="True" />
-            </Node>
-            <Node name="PowerplantServiceTest">
-              <Node name="TestControllers" expanded="True">
-                <Node name="TestPowerolantController.cs" selected="True" />
-              </Node>
-            </Node>
+            <Node name="PowerplantServiceTest" selected="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="PowerplantService" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.PowerplantService PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="25" column="1" />
-    <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/Controllers/PowerplantController.cs" relfile="PowerplantService/Controllers/PowerplantController.cs" line="21" column="1" />
-    <Breakpoint file="/Users/avikmanna/Projects/PowerplantService/PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" relfile="PowerplantService/BusinessLayer/LoggerService/LoggerService.cs" line="12" column="1" />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

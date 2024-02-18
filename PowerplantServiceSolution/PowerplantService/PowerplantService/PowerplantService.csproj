@@ -27,7 +27,6 @@
     <None Remove="BusinessLayer\BasePowerplant\" />
     <None Remove="Middleware\" />
     <None Remove="BusinessLayer\LoggerService\" />
-    <None Remove="PowerserviceLog\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataModel\" />
@@ -39,6 +38,5 @@
     <Folder Include="BusinessLayer\BasePowerplant\" />
     <Folder Include="Middleware\" />
     <Folder Include="BusinessLayer\LoggerService\" />
-    <Folder Include="PowerserviceLog\" />
   </ItemGroup>
 </Project>
