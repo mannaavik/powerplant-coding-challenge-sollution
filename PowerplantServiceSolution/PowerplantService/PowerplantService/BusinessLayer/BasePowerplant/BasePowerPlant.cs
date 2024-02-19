@@ -5,7 +5,7 @@ using PowerplantService.DataModel;
 namespace PowerplantService.BusinessLayer.BasePowerplant
 {
     /// <summary>
-    /// Class to manage Wind powerplant feature
+    /// Class to manage all powerplant feature
     /// </summary>
 	public abstract class BasePowerPlant : IFuelPowerPlant, IWindPowerPlant
     {

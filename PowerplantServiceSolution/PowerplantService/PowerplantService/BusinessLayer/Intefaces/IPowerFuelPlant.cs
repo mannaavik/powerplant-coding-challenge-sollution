@@ -4,7 +4,7 @@ using PowerplantService.DataModel;
 namespace PowerplantService.BusinessLayer.Intefaces
 {
 	/// <summary>
-	/// Interface to manage plant price and others
+	/// Interface to manage fuel plant price and others
 	/// </summary>
 	public interface IFuelPowerPlant
 	{

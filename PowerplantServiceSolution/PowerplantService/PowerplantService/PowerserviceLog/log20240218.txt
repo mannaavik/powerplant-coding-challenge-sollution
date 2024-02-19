@@ -477,3 +477,30 @@
 2024-02-18 20:17:59.527 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:8888/Powerplant application/json 663
 2024-02-18 20:17:59.536 +01:00 [INF] Executing endpoint 'PowerplantService.Controllers.PowerplantController.DecidePowerplants (PowerplantService)'
 2024-02-18 20:17:59.561 +01:00 [INF] Route matched with {action = "DecidePowerplants", controller = "Powerplant"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PowerplantService.DataModel.RequiredPowerPlant]] DecidePowerplants(PowerplantService.DataModel.Resources) on controller PowerplantService.Controllers.PowerplantController (PowerplantService).
+2024-02-18 23:17:19.916 +00:00 [INF] Now listening on: https://[::]:443
+2024-02-18 23:17:19.928 +00:00 [INF] Now listening on: http://[::]:80
+2024-02-18 23:17:19.930 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-18 23:17:19.930 +00:00 [INF] Hosting environment: Development
+2024-02-18 23:17:19.930 +00:00 [INF] Content root path: /app
+2024-02-18 23:17:19.979 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:52237/swagger - -
+2024-02-18 23:17:20.001 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:52237/swagger - - - 301 0 - 22.6095ms
+2024-02-18 23:17:20.003 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:52237/swagger/index.html - -
+2024-02-18 23:17:20.058 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:52237/swagger/index.html - - - 200 - text/html;charset=utf-8 54.4722ms
+2024-02-18 23:17:20.142 +00:00 [INF] Request starting HTTP/2 GET https://localhost:52237/swagger - -
+2024-02-18 23:17:20.144 +00:00 [INF] Request finished HTTP/2 GET https://localhost:52237/swagger - - - 301 0 - 1.6757ms
+2024-02-18 23:17:20.152 +00:00 [INF] Request starting HTTP/2 GET https://localhost:52237/swagger/index.html - -
+2024-02-18 23:17:20.158 +00:00 [INF] Request finished HTTP/2 GET https://localhost:52237/swagger/index.html - - - 200 - text/html;charset=utf-8 5.8936ms
+2024-02-18 23:17:20.161 +00:00 [INF] Request starting HTTP/2 GET https://localhost:52237/swagger/swagger-ui.css - -
+2024-02-18 23:17:20.162 +00:00 [INF] Request starting HTTP/2 GET https://localhost:52237/swagger/swagger-ui-bundle.js - -
+2024-02-18 23:17:20.162 +00:00 [INF] Request starting HTTP/2 GET https://localhost:52237/swagger/swagger-ui-standalone-preset.js - -
+2024-02-18 23:17:20.243 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-18 23:17:20.243 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-18 23:17:20.243 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-18 23:17:20.244 +00:00 [INF] Request finished HTTP/2 GET https://localhost:52237/swagger/swagger-ui.css - - - 200 144929 text/css 82.6856ms
+2024-02-18 23:17:20.243 +00:00 [INF] Request finished HTTP/2 GET https://localhost:52237/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 81.3302ms
+2024-02-18 23:17:20.243 +00:00 [INF] Request finished HTTP/2 GET https://localhost:52237/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 81.5408ms
+2024-02-18 23:17:20.333 +00:00 [INF] Request starting HTTP/2 GET https://localhost:52237/swagger/v1/swagger.json - -
+2024-02-18 23:17:20.333 +00:00 [INF] Request starting HTTP/2 GET https://localhost:52237/swagger/favicon-32x32.png - -
+2024-02-18 23:17:20.334 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-18 23:17:20.334 +00:00 [INF] Request finished HTTP/2 GET https://localhost:52237/swagger/favicon-32x32.png - - - 200 628 image/png 1.0441ms
+2024-02-18 23:17:20.385 +00:00 [INF] Request finished HTTP/2 GET https://localhost:52237/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.4188ms
